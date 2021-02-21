@@ -1,0 +1,313 @@
+/* #CSS
+---------------------------------
+    #HTML5
+    #BODY
+        #TYPOGRAPHY
+    #HELPERS
+    #IMAGES
+    #BUTTONS
+    #SITE STRUCTURE
+        #HEADER
+            #SITE-BRANDING (LOGO)   
+            #SITE NAVIGATION
+        #FOOTER
+        #SECTIONS
+            #HERO
+    #LAYOUT
+        #GRIDS
+    #EFFECTS (FADE-INS)
+--------------------------------- */
+
+
+/* #TYPOGRAPHY  */
+body {
+  background-color: rgb(17, 17, 17);
+  font-family: karmina, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 109%;
+  line-height: 1.5em;
+  display: grid;
+  grid-template-rows: auto1fr auto;
+}
+p.bio {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+h1 {
+  font-family: gaultier, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+h3 {
+font-family: gaultier, sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+p.strong {
+  font-family: gaultier, sans-serif;
+  font-style: italic;
+  color: rgba(255,255,255,.5)
+
+}
+
+strong {
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+
+
+/* #LINKS */
+a {
+color: white;
+text-decoration: none;
+}
+
+a:hover {
+color: white;
+}
+
+/* HELPERS */
+.text-centered {
+text-align: center;
+}
+
+/* #IMAGES & VIDEOS*/
+img {
+max-width: 100%;
+height: auto;
+}
+
+
+/*BUTTON*/
+
+.button {
+  font-family: gaultier, sans-serif;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  padding: 7px 9px;
+  transition: all ease-in-out 0.2s;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  transition: all ease-in-out 0.2s;
+}
+
+/* img.portrait {
+height: 50%;
+
+} */
+
+/* SITE-STRUCTURE */
+
+.site-header,
+.site-footer {
+  font-family: gaultier-lights, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  padding: 0;
+  letter-spacing: 0.15em;
+}
+
+.site-identity h1 {
+  font-family: gaultier, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3.5em;
+  margin: 0;
+}
+
+.site-identity h2 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  color: rgba(255,255,255,.5);
+}
+
+.site-identity {
+  padding-top: 3em;
+  padding-bottom: .5em;
+}
+
+.site-navigation ul {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 1.2em;
+}
+
+.site-navigation li {
+  margin: 0 .5em;
+  padding: 0;
+  display: inline-block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: .5em .5em;
+  color: white;
+}
+
+.site-navigation a:hover,
+.site-navigation a.selected {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+section {
+  padding: 0 0 3em 0;
+}
+
+/* #LAYOUT: THUMB IMAGE GRID */
+.thumbgrid {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumbgrid li {
+  list-style: none;
+  width: 49.5%;
+  padding-bottom: 0.4%;
+}
+
+@media (min-width: 768px) {
+  .thumbgrid li {
+    width: 49%;
+  }
+}
+
+.thumbgrid a img {
+    filter: brightness(1.05);
+    transition: all ease-in-out 0.2s;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.thumbgrid a:hover img {
+    filter: brightness(1);
+    border: 1px solid rgba(0,0,0,.3);
+}
+
+/* FULL-WIDTH HELPER */
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.full-width img {
+  width: 100%;
+}
+
+/* HERO SECTIONS */
+.hero {
+    padding: 2em 0;
+    /* background: #dedede; */
+    margin-bottom: 3em;
+}
+
+
+/* #LAYOUT: FLEX GRID */
+@media (min-width: 768px) {
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    .one-third.column {
+        width: 32%;
+    }
+    .two-thirds.column {
+        width: 60%;
+    }
+    
+}
+
+/* Page Fade-ins */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main,
+fade-in {
+  opacity: 0;
+  animation: fade-in ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade-and-move-in {
+  from {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.fade-and-move-in * {
+  opacity: 0;
+  animation: fade-and-move-in ease-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+.fade-and-move-in *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.fade-and-move-in *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.fade-and-move-in *:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.fade-and-move-in *:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.fade-and-move-in *:nth-child(5) {
+  animation-delay: 1s;
+}
+.fade-and-move-in *:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.fade-and-move-in *:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.fade-and-move-in *:nth-child(8) {
+  animation-delay: 1.6s;
+}
+.fade-and-move-in *:nth-child(9) {
+  animation-delay: 1.8s;
+}
