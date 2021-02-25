@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+    padding: 0 5px;
+    margin: 0 -10px;
+  }
+  
+  .column {
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .card {
+    background-color: grey;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .thumb {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    position: absolute;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: white;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+  }
+  
+  .card:hover .title {
+    opacity: 1;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }

@@ -1,0 +1,123 @@
+/* GLOBAL RESET*/
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------------- 
+
+
+CSS TABLE OF CONTENTS
+
+
+#GLOBAL RESETS
+#BASE TYPOGRAPHY
+#BUTTONS
+#MEDIA
+    #RESPONSIVE IMAGES
+#LAYOUT
+    #CONTAINER
+    #MEDIA QUERES
+    #CUSTOME SEMANTIC GRID SYSTEM
+#STRUCTURE
+    #SITE HEADER
+    #SITE NAV
+    #MAIN
+        #SECTIONS
+    #SITE FOOTER
+
+------------------------- */
+/* BODY RESET*/
+body {
+  background-color: grey;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+header h1 {
+  font-size: 1em;
+  margin: 0;
+}
+header nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+main {
+  margin: 0 50px;
+  padding: 1em;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+section {
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  padding: 0 5px;
+  margin: 0 -10px;
+}
+
+.column {
+  width: 25%;
+  padding: 0 5px;
+}
+
+.card {
+  background-color: grey;
+  position: relative;
+  margin: 10px 0;
+}
+
+.thumb {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: white;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+
+.card:hover .title {
+  opacity: 1;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
