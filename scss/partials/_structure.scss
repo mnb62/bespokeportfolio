@@ -1,3 +1,33 @@
+.head {
+  background-color: white;
+}
+
+.banner-box {
+  background-color: grey;
+  position: relative;
+}
+
+.banner {
+  height: 400px;
+  width: 100%;
+}
+
+.textbox {
+  margin-top:55px;
+  padding: 5px;
+  background-color: lightgrey;
+  position: absolute;
+  height: 300px;
+  left: 65px;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: -5.5%;
+  text-align: center;
+  width: 50%;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -7,22 +37,17 @@ header {
     background-color: white;
     overflow: hidden;
 
-    h1 {
-        font-size: 1em;
-        margin: 0;
-      }
-
       nav {
         position: absolute;
         top: 50%;
-        left: 0;
+        left: 30%;
         transform: translate(0, -50%);
       }
   }
 
   main {
     margin: 0 50px;
-    padding: 1em;
+    padding: 2em 1em 0em 1em;
   }
   
   footer {

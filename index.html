@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>MRB Portfolio</title>
+    <title>Mochi Studio</title>
     <meta name="description" content="A minimal, simple portfolio site." />
 
     <!-- VIEWPORT FOR MOBILE -->
@@ -23,25 +23,35 @@
 <body>
 
     <header>
-        <h1><img src="http://via.placeholder.com/50x50" class="thumb"></h1>
-        <nav>Nav</nav>
+        <img src="http://via.placeholder.com/50x50" class="thumb">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Clients</a></li>
+            </ul>
+        </div>
+        <nav><span style="font-size:30px;cursor:pointer" onclick="openNav()"><svg width="15" height="50" class="menu">
+                    <rect id="menubar-top" x="0" width="3" height="50"></rect>
+                    <rect id="menubar-middle" x="8" width="3" height="50"></rect>
+                </svg></nav>
     </header>
     <main>
-        <section>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime blanditiis placeat est dolorem itaque
-            enim nam facilis consequuntur? Nemo quidem, doloremque illo omnis fuga ipsa consequatur! Excepturi debitis
-            architecto aliquam obcaecati nulla? Quos architecto similique libero. Iusto, corrupti, nostrum harum itaque
-            architecto aliquam quasi tempora quidem natus minus mollitia? Earum, corrupti? Aliquid omnis, nobis dolorem
-            in modi magnam earum asperiores tempora reprehenderit accusantium qui soluta? Est eius repudiandae sapiente
-            magnam quas quidem at, deleniti dolorum temporibus id veritatis soluta aspernatur perspiciatis asperiores
-            totam eos possimus ipsam dolore rerum natus ad vel vitae veniam cupiditate. Minima voluptate reprehenderit
-            fugit ab.
-        </section>
+        <div class="banner-box">
+            <img class="banner"
+                src="https://images.unsplash.com/photo-1604935067269-27c7e8b36618?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80">
+            <div class="textbox">
+                <h3> hello! i am</h3>
+                <h1>mochi <br>studio</h1>
+                <h4>GRAPHIC DESIGN/UI DESIGN</h4>
+            </div>
+        </div>
         <section>
             <div class="row">
                 <div class="column">
                     <div class="card">
-                        <img src="http://via.placeholder.com/150x200" class="thumb">
+                        <img src="img/milkish_wholeagain_ad.png" class="thumb">
                         <div class="title block-a">
                             <h2>Block A</h2>
                         </div>
@@ -55,7 +65,7 @@
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150x100" class="thumb">
+                        <img src="img/rome-thumb.jpg" class="thumb">
                         <div class="title block-c">
                             <h2>Block C</h2>
                         </div>
@@ -98,16 +108,6 @@
             </div>
             </div>
         </section>
-        <section>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime blanditiis placeat est dolorem itaque
-            enim nam facilis consequuntur? Nemo quidem, doloremque illo omnis fuga ipsa consequatur! Excepturi debitis
-            architecto aliquam obcaecati nulla? Quos architecto similique libero. Iusto, corrupti, nostrum harum itaque
-            architecto aliquam quasi tempora quidem natus minus mollitia? Earum, corrupti? Aliquid omnis, nobis dolorem
-            in modi magnam earum asperiores tempora reprehenderit accusantium qui soluta? Est eius repudiandae sapiente
-            magnam quas quidem at, deleniti dolorum temporibus id veritatis soluta aspernatur perspiciatis asperiores
-            totam eos possimus ipsam dolore rerum natus ad vel vitae veniam cupiditate. Minima voluptate reprehenderit
-            fugit ab.
-        </section>
     </main>
     <footer>
         <nav>
@@ -115,8 +115,7 @@
         </nav>
     </footer>
 
-
-
+    <script src="js/pullout-nav.js"></script>
 </body>
 
 </html>
