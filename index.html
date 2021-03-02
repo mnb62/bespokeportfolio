@@ -24,18 +24,18 @@
 
     <header>
         <img src="http://via.placeholder.com/50x50" class="thumb">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="mySidenav" class="sidenav" data-navstate="closed">
+            <div class="close-button">&times;</div>
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Clients</a></li>
             </ul>
         </div>
-        <nav><span style="font-size:30px;cursor:pointer" onclick="openNav()"><svg width="15" height="50" class="menu">
-                    <rect id="menubar-top" x="0" width="3" height="50"></rect>
-                    <rect id="menubar-middle" x="8" width="3" height="50"></rect>
-                </svg></nav>
+        <nav><svg width="15" height="50" class="open-button" data-navstate="open">
+                <rect id="menubar-top" x="0" width="3" height="50"></rect>
+                <rect id="menubar-middle" x="8" width="3" height="50"></rect>
+            </svg></nav>
     </header>
     <main>
         <div class="banner-box">
