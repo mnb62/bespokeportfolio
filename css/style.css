@@ -40,25 +40,46 @@ body {
 
 .banner-box {
   background-color: grey;
+  width: 100%;
+  height: 555px;
   position: relative;
+  overflow: hidden;
 }
 
 .banner {
-  height: 400px;
+  height: auto;
   width: 100%;
 }
 
 .textbox {
   margin-top: 55px;
   padding: 5px;
-  background-color: lightgrey;
+  background-color: #ed8996;
   position: absolute;
-  height: 300px;
+  height: 100%;
   left: 0;
   right: 0;
-  top: -5.5%;
-  text-align: center;
+  top: -9.9%;
+  text-align: left;
   width: 50%;
+}
+.textbox h1, .textbox h3, .textbox h4 {
+  color: white;
+}
+.textbox h1 {
+  font-size: 140px;
+  font-weight: 1000;
+  line-height: 0.8em;
+}
+.textbox h3 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1em;
+}
+.textbox h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 25px 10px;
 }
 
 header {
@@ -79,7 +100,7 @@ header nav {
 
 main {
   margin: 0 50px;
-  padding: 2em 1em 0em 1em;
+  padding: 0em 0em 2em 1em;
 }
 
 footer {
@@ -90,7 +111,6 @@ footer {
   right: 0;
   width: 50px;
   height: 100vh;
-  background-color: white;
   overflow: hidden;
 }
 
@@ -98,7 +118,7 @@ section {
   overflow: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: sans-serif;
 }
 
@@ -117,7 +137,6 @@ h3 {
 }
 
 h4 {
-  font-family: sans-serif;
   font-weight: 400;
   margin: 25px 10px;
 }
